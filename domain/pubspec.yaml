@@ -1,0 +1,23 @@
+name: domain
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  common:
+    path: ../common
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  freezed: ^2.3.2
+  build_runner: ^2.3.3
+  injectable_generator: ^2.1.5
+flutter:

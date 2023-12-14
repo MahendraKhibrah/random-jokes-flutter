@@ -1,0 +1,18 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Style rules
+    - camel_case_types
+    - library_names
+    - avoid_empty_else
+    - unnecessary_brace_in_string_interps
+    - leading_newlines_in_multiline_strings
+    - prefer_single_quotes
+    # formatting
+    - curly_braces_in_flow_control_structures
+    # doc comments
+    - slash_for_doc_comments
+    - always_require_non_null_named_parameters
+    - prefer_mixin
+    - prefer_void_to_null

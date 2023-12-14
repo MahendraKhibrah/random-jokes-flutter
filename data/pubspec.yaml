@@ -1,0 +1,29 @@
+name: data
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  common:
+    path: ../common
+  domain:
+    path: ../domain
+  json_annotation: ^4.8.0
+  dio: ^5.2.1+1
+  firebase_remote_config: ^4.2.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  json_serializable: ^6.6.1
+  freezed: ^2.3.2
+  build_runner: ^2.3.3
+  injectable_generator: ^2.1.5
+flutter:
