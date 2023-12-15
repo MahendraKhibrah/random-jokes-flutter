@@ -463,6 +463,8 @@ abstract class _$$_SuccessCopyWith<$Res> {
       __$$_SuccessCopyWithImpl<$Res>;
   @useResult
   $Res call({Example example});
+
+  $ExampleCopyWith<$Res> get example;
 }
 
 /// @nodoc
@@ -475,14 +477,22 @@ class __$$_SuccessCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? example = freezed,
+    Object? example = null,
   }) {
     return _then(_$_Success(
-      freezed == example
+      null == example
           ? _value.example
           : example // ignore: cast_nullable_to_non_nullable
               as Example,
     ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $ExampleCopyWith<$Res> get example {
+    return $ExampleCopyWith<$Res>(_value.example, (value) {
+      return _then(_value.copyWith(example: value));
+    });
   }
 }
 
@@ -504,12 +514,11 @@ class _$_Success implements _Success {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Success &&
-            const DeepCollectionEquality().equals(other.example, example));
+            (identical(other.example, example) || other.example == example));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(example));
+  int get hashCode => Object.hash(runtimeType, example);
 
   @JsonKey(ignore: true)
   @override

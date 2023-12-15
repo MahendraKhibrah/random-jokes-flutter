@@ -1,6 +1,6 @@
 import 'package:common/di/injection.dart';
 import 'package:common/common.dart';
-import 'package:clean_architecture_template/di/injection.config.dart';
+import 'package:random_jokes/di/injection.config.dart';
 
 @InjectableInit(
   initializerName: 'init',

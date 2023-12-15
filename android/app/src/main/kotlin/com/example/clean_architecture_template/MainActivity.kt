@@ -1,4 +1,4 @@
-package com.example.clean_architecture_template
+package com.example.random_jokes
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -5,8 +5,8 @@ import 'package:common/utils/env.dart';
 import 'package:common/utils/global_route.dart';
 import 'package:common/utils/locale.dart';
 import 'package:common/utils/route_key.dart';
-import 'package:clean_architecture_template/di/injection.dart';
-import 'package:clean_architecture_template/routes/routes.dart';
+import 'package:random_jokes/di/injection.dart';
+import 'package:random_jokes/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 void initApp(Env env) async {

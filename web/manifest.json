@@ -1,6 +1,6 @@
 {
-    "name": "clean_architecture_template",
-    "short_name": "clean_architecture_template",
+    "name": "random_jokes",
+    "short_name": "random_jokes",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
