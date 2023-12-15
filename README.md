@@ -5,3 +5,7 @@ This repository serves as a template Flutter project implementing the Clean Arch
 Dependency Injection with `get_it`
 API Communication with `dio`
 State Management using `cubit`
+
+check this link below to see the template :
+
+https://github.com/MahendraKhibrah/clean-architecture-flutter
