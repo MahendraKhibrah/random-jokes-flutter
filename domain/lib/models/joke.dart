@@ -8,9 +8,9 @@ part 'joke.g.dart';
 @Freezed(makeCollectionsUnmodifiable: false)
 class Joke with _$Joke {
   const factory Joke({
-    @JsonKey(name: 'id') required String? id,
+    @JsonKey(name: 'id') required int? id,
     @JsonKey(name: 'type') required String? type,
-    @JsonKey(name: 'setup') required DateTime? setup,
+    @JsonKey(name: 'setup') required String? setup,
     @JsonKey(name: 'punchline') required String? punchline,
   }) = _Article;
 

@@ -21,11 +21,11 @@ Joke _$JokeFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Joke {
   @JsonKey(name: 'id')
-  String? get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
   @JsonKey(name: 'type')
   String? get type => throw _privateConstructorUsedError;
   @JsonKey(name: 'setup')
-  DateTime? get setup => throw _privateConstructorUsedError;
+  String? get setup => throw _privateConstructorUsedError;
   @JsonKey(name: 'punchline')
   String? get punchline => throw _privateConstructorUsedError;
 
@@ -40,9 +40,9 @@ abstract class $JokeCopyWith<$Res> {
       _$JokeCopyWithImpl<$Res, Joke>;
   @useResult
   $Res call(
-      {@JsonKey(name: 'id') String? id,
+      {@JsonKey(name: 'id') int? id,
       @JsonKey(name: 'type') String? type,
-      @JsonKey(name: 'setup') DateTime? setup,
+      @JsonKey(name: 'setup') String? setup,
       @JsonKey(name: 'punchline') String? punchline});
 }
 
@@ -68,7 +68,7 @@ class _$JokeCopyWithImpl<$Res, $Val extends Joke>
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -76,7 +76,7 @@ class _$JokeCopyWithImpl<$Res, $Val extends Joke>
       setup: freezed == setup
           ? _value.setup
           : setup // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       punchline: freezed == punchline
           ? _value.punchline
           : punchline // ignore: cast_nullable_to_non_nullable
@@ -93,9 +93,9 @@ abstract class _$$ArticleImplCopyWith<$Res> implements $JokeCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: 'id') String? id,
+      {@JsonKey(name: 'id') int? id,
       @JsonKey(name: 'type') String? type,
-      @JsonKey(name: 'setup') DateTime? setup,
+      @JsonKey(name: 'setup') String? setup,
       @JsonKey(name: 'punchline') String? punchline});
 }
 
@@ -119,7 +119,7 @@ class __$$ArticleImplCopyWithImpl<$Res>
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as int?,
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -127,7 +127,7 @@ class __$$ArticleImplCopyWithImpl<$Res>
       setup: freezed == setup
           ? _value.setup
           : setup // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       punchline: freezed == punchline
           ? _value.punchline
           : punchline // ignore: cast_nullable_to_non_nullable
@@ -150,13 +150,13 @@ class _$ArticleImpl implements _Article {
 
   @override
   @JsonKey(name: 'id')
-  final String? id;
+  final int? id;
   @override
   @JsonKey(name: 'type')
   final String? type;
   @override
   @JsonKey(name: 'setup')
-  final DateTime? setup;
+  final String? setup;
   @override
   @JsonKey(name: 'punchline')
   final String? punchline;
@@ -198,9 +198,9 @@ class _$ArticleImpl implements _Article {
 
 abstract class _Article implements Joke {
   const factory _Article(
-          {@JsonKey(name: 'id') required final String? id,
+          {@JsonKey(name: 'id') required final int? id,
           @JsonKey(name: 'type') required final String? type,
-          @JsonKey(name: 'setup') required final DateTime? setup,
+          @JsonKey(name: 'setup') required final String? setup,
           @JsonKey(name: 'punchline') required final String? punchline}) =
       _$ArticleImpl;
 
@@ -208,13 +208,13 @@ abstract class _Article implements Joke {
 
   @override
   @JsonKey(name: 'id')
-  String? get id;
+  int? get id;
   @override
   @JsonKey(name: 'type')
   String? get type;
   @override
   @JsonKey(name: 'setup')
-  DateTime? get setup;
+  String? get setup;
   @override
   @JsonKey(name: 'punchline')
   String? get punchline;

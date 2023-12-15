@@ -12,14 +12,14 @@ abstract class AppEnv {
     switch (env) {
       case Env.dev:
         {
-          baseMainUrl = 'https://example.p.rapidapi.com/random/example';
-          title = 'example dev';
+          baseMainUrl = 'https://official-joke-api.appspot.com';
+          title = 'random joke dev';
           break;
         }
       case Env.prod:
         {
-          baseMainUrl = 'https://dad-jokes.p.rapidapi.com/random/example';
-          title = 'example';
+          baseMainUrl = 'https://official-joke-api.appspot.com';
+          title = 'random joke';
           break;
         }
     }

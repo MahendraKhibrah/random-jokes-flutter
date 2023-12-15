@@ -1,5 +1,6 @@
 import 'package:common/common.dart';
 import 'package:data/api/example_api.dart';
+import 'package:data/api/random_jokes_api.dart';
 import 'package:data/intreceptors/dio_http_intreceptors.dart';
 import 'package:data/intreceptors/dio_error_interceptor.dart';
 
@@ -20,4 +21,7 @@ abstract class DataModule {
 
   @singleton
   ExampleApi get exampleApi;
+
+  @singleton
+  RandomJokesApi get randomJokesApi;
 }

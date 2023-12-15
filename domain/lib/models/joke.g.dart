@@ -8,11 +8,9 @@ part of 'joke.dart';
 
 _$ArticleImpl _$$ArticleImplFromJson(Map<String, dynamic> json) =>
     _$ArticleImpl(
-      id: json['id'] as String?,
+      id: json['id'] as int?,
       type: json['type'] as String?,
-      setup: json['setup'] == null
-          ? null
-          : DateTime.parse(json['setup'] as String),
+      setup: json['setup'] as String?,
       punchline: json['punchline'] as String?,
     );
 
@@ -20,6 +18,6 @@ Map<String, dynamic> _$$ArticleImplToJson(_$ArticleImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'type': instance.type,
-      'setup': instance.setup?.toIso8601String(),
+      'setup': instance.setup,
       'punchline': instance.punchline,
     };

@@ -31,6 +31,8 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+pubspec.lock
+podfile.lock
 
 # Symbolication related
 app.*.symbols
@@ -42,3 +44,22 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+/lib/firebase_options.dart
+*.g.dart
+*.freezed.dart
+*.config.dart
+local.properties
+/Payload
+Payload.ipa
+.crashlytics
+
+**/ephemeral/**
+*flutter_export_environment.sh
+*Generated.xcconfig
+GeneratedPluginRegistrant.*
+generated_plugin*
+
+ios/Runner/GoogleService-Info.plist
+
+.flutter-plugins*
