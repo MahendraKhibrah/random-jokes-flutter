@@ -6,8 +6,10 @@ import 'package:common/utils/global_route.dart';
 import 'package:common/utils/locale.dart';
 import 'package:common/utils/route_key.dart';
 import 'package:random_jokes/di/injection.dart';
+import 'package:random_jokes/firebase_options.dart';
 import 'package:random_jokes/routes/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void initApp(Env env) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,6 +17,11 @@ void initApp(Env env) async {
   await EasyLocalization.ensureInitialized();
 
   AppEnv.setupEnv(env);
+
+  await Firebase.initializeApp(
+    name: Platform.isAndroid ? AppEnv.title : null,
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   getDependencies();
 

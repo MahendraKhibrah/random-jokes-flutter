@@ -63,12 +63,12 @@ android {
     productFlavors {
         dev {
             dimension "default"
-            resValue "string", "app_name", "random_jokes_dev"
+            resValue "string", "app_name", "random jokes dev"
             applicationIdSuffix ".dev"
         }
         prod {
             dimension "default"
-            resValue "string", "app_name", "random_jokes"
+            resValue "string", "app_name", "random jokes"
             applicationIdSuffix ""
         }
     }
