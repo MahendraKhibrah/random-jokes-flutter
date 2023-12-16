@@ -34,6 +34,7 @@ generate-code-all:
 
 preparation:
 	cp lib/firebase/$(ENV)_firebase_options.dart lib/firebase_options.dart
+	cp android/app/src/$(ENV)/google-services.json android/app/google-services.json
 	cp ios/$(ENV)/firebase_app_id_file.json ios/firebase_app_id_file.json
 	cp ios/Runner/$(ENV)/GoogleService-Info.plist ios/Runner/GoogleService-Info.plist
 	$(MAKE) analyze
@@ -55,12 +56,11 @@ share-preparation:
 
 share-dev-apk:
 	flutter build apk --target lib/main_dev.dart --flavor dev --release --obfuscate --split-debug-info=build/symbols/android/dev --no-tree-shake-icons
-	firebase crashlytics:symbols:upload --app=1:110625952909:android:0082016c9112fbb65f7ec4 build/symbols/android/dev
-	firebase appdistribution:distribute build/app/outputs/flutter-apk/app-dev-release.apk --app 1:110625952909:android:0082016c9112fbb65f7ec4 --release-notes-file release_notes/dev_release_notes.txt --groups dev-testers
+	firebase appdistribution:distribute build/app/outputs/flutter-apk/app-dev-release.apk --app 1:210907123493:android:229ae1b3b7923906c1d4cc --release-notes-file release_notes/dev_release_notes.txt --groups dev-testers
 
 share-dev-ipa:
 	flutter build ipa --target lib/main_dev.dart --flavor dev --release --export-method=ad-hoc --no-tree-shake-icons
-	firebase appdistribution:distribute build/ios/ipa/creator.ipa --app 1:110625952909:ios:192769fb2ff40cae5f7ec4 --release-notes-file release_notes/dev_release_notes.txt --groups dev-testers
+	firebase appdistribution:distribute build/ios/ipa/creator.ipa --app 1:210907123493:android:229ae1b3b7923906c1d4cc --release-notes-file release_notes/dev_release_notes.txt --groups dev-testers
 
 share-dev-apk-with-preparation:
 	$(MAKE) share-preparation

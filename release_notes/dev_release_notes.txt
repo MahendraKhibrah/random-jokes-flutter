@@ -1,0 +1,4 @@
+release notes : 
+    1. project setup
+    2. integrating random jokes api to home page.
+    
